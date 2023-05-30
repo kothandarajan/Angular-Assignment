@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <script src="index.js"> </script>
+
+    <link href="index.css" rel="stylesheet">
+    <link href="second.css" rel="stylesheet"> <!-- order imporant , this will override -->
+
+</head>
+
+<body>
+    <div id="header">
+        <!--
+        ABC INC
+        div default 0 or text height , weight screen weight
+
+        DIV , P - block element -  rectagle - default 0 or text height , weight screen weight
+        -- bordor , within border space - padding , outer space -Margin
+        inline element
+
+        li also block - so top to botton default
+    -->
+        <div id="title"> ABC Inc </div>
+        <div id="menu">
+            <ul>
+                <li>home</li>
+                <li>Projects</li>
+                <li>clients</li>
+                <li>products</li>
+                <li>Reach out</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div id="slide-area">
+        <div id="slide-show">
+            <img src="1.jpg" id = "img1">
+            <img src="left1.png" id = "left-icon" class ="icon" 
+              onclick="changeimage('left')">
+            <img src="right1.png" id = "right-icon" class="icon"
+            onclick="changeimage('right')">
+            
+
+
+        </div>
+    </div>
+
+    <div id="services-wrapper">
+
+
+
+    </div>
+    <div id="footer">
+        &copy; all copyrights reserved , ABC Inc 2023
+    </div>
+    <script src="Data.js"> </script>
+
+</body>
+
+
+</html>
