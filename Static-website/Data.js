@@ -50,20 +50,52 @@ for (let service of data.services) {
 */
 
 
-let code =""
+let code = ""
 
-for(let service of data.services){
-    code+= "<div class='service-box'>"
-    code+="<h3>"+service.name+"</h3>"
-    code+="<img src='"+service.image+"'>"
-    code+="<div class='features'> <ul>"
-    for(let feature of service.features){
-        code+="<li>"+feature+"</li>"
+
+for (let service of data.services) {
+    code += "<div class='service-box'>"
+    code += "<h3>" + service.name + "</h3>"
+    code += "<img src='" + service.image + "'>"
+    code += "<div class='features'> <ul>"
+    for (let feature of service.features) {
+
+         let x= "onclick=myfunction('"+ encodeURIComponent(feature) + "')"
+        // alert(x)
+        code += "<li "+x+" >" + feature + "</li>"
     }
-    code+="</ul></div></div>"
+
+    code += "</ul></div></div>"
+
 }
 
-document.getElementById("services-wrapper").innerHTML=code
+var myfunction = function alertmsg(msg) {
+    alert(decodeURIComponent(msg))
+}
+
+
+
+var upclick = function upclick() {
+
+    document.getElementById("slide-area").style.display = "none" 
+    document.getElementById("upid").style.visibility = "hidden"
+    document.getElementById("downid").style.visibility = "visible"
+    
+ 
+}
+
+var downclick = function downclick() {
+
+    document.getElementById("slide-area").style.display = "block" 
+    document.getElementById("downid").style.visibility = "hidden" 
+    document.getElementById("upid").style.visibility = "visible"
+    
+ 
+}
+
+
+
+document.getElementById("services-wrapper").innerHTML = code
 
 
 
