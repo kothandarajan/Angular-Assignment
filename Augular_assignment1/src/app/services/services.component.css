@@ -1,0 +1,28 @@
+.box {
+    height: 73px;
+    width: 28%;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-right: 10px;
+    
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:whitesmoke;
+    color:  black;
+    float: left;
+  /*  box-shadow: 2px 2px 5px gray; */
+}
+span{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: lighter;
+   
+
+}
+p {
+    font-size: 7px;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+}

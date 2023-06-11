@@ -1,0 +1,57 @@
+#main {
+background-color: rgb(236, 229, 229);
+}
+#site{
+
+    padding-left: 10px;
+}
+
+#menubar {
+
+    height: 25px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#header {
+    margin-top: 10px;
+    padding-top: 40px;
+    height: 90px;
+    text-align: center;
+    color: whitesmoke;
+    background-color:#a7c449;
+}
+
+#services {
+
+    height: 100px;
+
+ /*   background-color: rgb(213, 211, 88);*/
+
+
+}
+
+
+
+#content {
+
+    height: 140px;
+    
+  /* background-color: rgb(191, 28, 28);*/
+
+}
+#gallery {
+
+    height: 65px;
+ /*   background-color: rgb(197, 147, 215);*/
+    
+
+}
+#footer {
+
+    height: 25px;
+  /* background-color:  rgb(186, 50, 50);*/
+    color: black;
+    margin-top: 15px;
+
+}

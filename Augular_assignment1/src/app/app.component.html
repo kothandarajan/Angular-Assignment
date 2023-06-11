@@ -1,0 +1,29 @@
+<div id ="main">
+  <div id="sitelogo">
+    <span  id="site" style=
+    "color: black;font-weight:bold; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 15px;" id
+    ="site"> <b>site</b></span> <span style=
+    "color: green;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;font-size: 15px;" id
+    ="logo">logo</span>
+  </div>
+  <div id="menubar">
+    <app-menubar></app-menubar>
+  </div>
+  <div id="header">
+    <app-header></app-header>
+  </div>
+  <div id="services">
+    <app-services *ngFor="let x of services"[boxtitle]="x"></app-services>
+</div>
+
+  <div id="content">
+    <app-content></app-content>
+  </div>
+  <div style="font-size: medium;text-align:center">Gallery</div>
+  <div id="gallery">
+    <app-gallery  *ngFor="let y of gallery;let id=index" [boxtheme]="themeStyles[id]"></app-gallery>
+   </div>
+  <div id="footer">
+    <app-footer ></app-footer>
+  </div>
+</div>
